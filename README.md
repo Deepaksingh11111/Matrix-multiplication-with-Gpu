@@ -23,11 +23,7 @@ The code will attempt to execute on an available GPU first and fallback to the s
 | Software                          | Intel&reg; oneAPI DPC++/C++ Compiler  <br> Intel&reg; oneAPI C++ Compiler Classic <br> Intel&reg; C++ Compiler
 
 
-## Key implementation details
-
-Since the sample multiples two large matrices, this sample is a slightly more complex computation than the [Vector Add](https://github.com/oneapi-src/oneAPI-samples/tree/master/DirectProgramming/C++SYCL/DenseLinearAlgebra/vector-add) sample. This sample uses buffers to manage memory. (For more information on different memory management options, refer to the `Vector Add` sample.)
-
-The default sample builds the SYCL*-compliant application, and separate OpenMP build instructions are included below.
+## Key implementation detail
 
 The code attempts to run the calculation on both the GPU and CPU and verify the results. The size of the computation can be adjusted for heavier workloads. If successful, the name of the offload device and a success message is displayed.
 
